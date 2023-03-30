@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databasjava.SearchController">
+    <top>
+        <VBox prefWidth="400" prefHeight="50">
+            <TextField fx:id="searchField" promptText="Enter a film title" onAction="#handleSearch" />
+            <Button text="Search" onAction="#handleSearch" />
+        </VBox>
+    </top>
+    <center>
+        <ListView fx:id="resultsList" />
+    </center>
+</BorderPane>
